@@ -34,6 +34,8 @@ Build and run the app...
 
 It is just using the content API endpoint, pulling all articles and displaying them in a list.
 
+This is what it looks like on an Android Nexus 4 running Android 8.1.0...
+
 ![screen grab of the app](joomla4api_basic_flutter_app_small.png)
 
 
@@ -49,6 +51,16 @@ To check the API is working you can test it with a cURL call, like...
 ```curl --location --request GET 'https://your_site_base_url.com/api/index.php/v1/content/article' --header 'Authorization: Basic basicAuth'```
 
 ...in the above curl call, you can get the ```basicAuth``` value from the flutter terminal output.
+
+
+
+## Things to do next 
+
+We could / should do some more bist to this, like...
+
+- [ ] add HTML rendering
+- [ ] add error handling
+- [ ] some other stuff...
 
 
 
