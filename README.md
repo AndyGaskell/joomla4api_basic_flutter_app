@@ -56,7 +56,7 @@ To check the API is working you can test it with a cURL call, like...
 
 ## Things to do next 
 
-We could / should do some more bist to this, like...
+I could / should do some more bits to this, like...
 
 - [ ] add HTML rendering
 - [ ] add error handling
@@ -72,21 +72,16 @@ We could / should do some more bist to this, like...
 
 
 
-## API
+## Joomla API Refs
 
 * https://www.joomdev.com/blog/entry/joomla-4-api-introduction
 * https://docs.joomla.org/J4.x:Joomla_Core_APIs
 
 
 
-## API Auth
+## Useful Flutter Refs
 
 * https://medium.com/@hagenverfolgt/basic-http-auth-with-flutter-the-right-way-e5209cbe4b55
-
-
-
-## Refs
-
 * https://medium.com/@yugandhar0189/flutter-json-parsing-from-network-response-9c0e8756d43
 * https://github.com/yugandh/Flutter_JsonParsing
 * https://app.quicktype.io/
