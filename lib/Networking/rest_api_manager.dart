@@ -26,11 +26,13 @@ class RestApiManager {
       'accept': 'application/json',
       'authorization': basicAuth
     };
-    print('basicAuth: ${basicAuth}');
+    print('basicAuth: $basicAuth');
+
+    print('site_url: $site_url');
 
     // add the joomla v4 API to the 
     var url = "$site_url/api/index.php/v1/content/article";
-    print('url: ${url}');
+    print('endpoint url: $url');
 
     // Await the http get response, then decode the json-formatted responce.
     var response = await get(url, headers: headers);
@@ -39,7 +41,7 @@ class RestApiManager {
 
     if (response.statusCode == 200) {
       var jsonResponse = jsonDecode(response.body);
-      print('json response: ${jsonResponse} ');
+      print('json response: $jsonResponse ');
 
       final articles = joomlaArticlesFromJson(response.body);
 

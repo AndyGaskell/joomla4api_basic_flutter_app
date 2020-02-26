@@ -9,7 +9,9 @@ Set up flutter, see https://flutter.dev/docs/get-started/install
 Get this code from https://github.com/AndyGaskell/joomla4api_basic_flutter_app
 
 Set the details for your Joomla 4 site in the file...
+
 ```lib/Networking/rest_api_manager.dart```
+
 This needs...
 * Site URL
 * Joomla site's username
@@ -17,24 +19,36 @@ This needs...
 
 
 Create all the various other flutter files...
+
 ```flutter create .```
 
 Build and run the app...
+
 ```flutter run```
 
+## What the App does
+
+It is just using the content API endpoint, pulling all articles and displaying them in a list.
 
 
 
-This project is a starting point for a Flutter application.
+## Troubleshooting
 
-A few resources for a Flutter project:
+Flutter set-up issues can usually solved by running...
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```flutter doctor```
 
-For help getting started with Flutter, view
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To check the API is working you can test it with a cURL call, like...
+
+```curl --location --request GET 'https://your_site_base_url.com/api/index.php/v1/content/article' --header 'Authorization: Basic basicAuth'```
+
+...in the above curl call, you can get the ```basicAuth``` value from the flutter terminal output.
+
+## General Flutter links
+* https://flutter.dev/docs/get-started/codelab
+* https://flutter.dev/docs
+* https://flutter.dev/docs/cookbook
+
 
 
 ## API
@@ -42,9 +56,6 @@ samples, guidance on mobile development, and a full API reference.
 https://www.joomdev.com/blog/entry/joomla-4-api-introduction
 
 https://docs.joomla.org/J4.x:Joomla_Core_APIs
-
-
-curl --location --request GET 'http://localhost/amh/api/index.php/v1/content/article' --header 'Authorization: Basic username_password_hash'
 
 
 ## API Auth
