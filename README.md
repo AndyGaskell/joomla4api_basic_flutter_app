@@ -2,6 +2,8 @@
 
 A basic flutter app using the Joomla 4 API.
 
+
+
 ## Getting Started
 
 Set up flutter, see https://flutter.dev/docs/get-started/install
@@ -26,9 +28,13 @@ Build and run the app...
 
 ```flutter run```
 
+
+
 ## What the App does
 
 It is just using the content API endpoint, pulling all articles and displaying them in a list.
+
+![screen grab of the app](joomla4api_basic_flutter_app_small.png)
 
 
 
@@ -44,7 +50,10 @@ To check the API is working you can test it with a cURL call, like...
 
 ...in the above curl call, you can get the ```basicAuth``` value from the flutter terminal output.
 
+
+
 ## General Flutter links
+
 * https://flutter.dev/docs/get-started/codelab
 * https://flutter.dev/docs
 * https://flutter.dev/docs/cookbook
@@ -53,20 +62,19 @@ To check the API is working you can test it with a cURL call, like...
 
 ## API
 
-https://www.joomdev.com/blog/entry/joomla-4-api-introduction
+* https://www.joomdev.com/blog/entry/joomla-4-api-introduction
+* https://docs.joomla.org/J4.x:Joomla_Core_APIs
 
-https://docs.joomla.org/J4.x:Joomla_Core_APIs
 
 
 ## API Auth
 
-https://medium.com/@hagenverfolgt/basic-http-auth-with-flutter-the-right-way-e5209cbe4b55
+* https://medium.com/@hagenverfolgt/basic-http-auth-with-flutter-the-right-way-e5209cbe4b55
+
 
 
 ## Refs
 
-https://medium.com/@yugandhar0189/flutter-json-parsing-from-network-response-9c0e8756d43
-
-https://github.com/yugandh/Flutter_JsonParsing
-
-https://app.quicktype.io/
+* https://medium.com/@yugandhar0189/flutter-json-parsing-from-network-response-9c0e8756d43
+* https://github.com/yugandh/Flutter_JsonParsing
+* https://app.quicktype.io/
