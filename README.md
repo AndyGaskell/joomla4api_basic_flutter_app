@@ -16,8 +16,7 @@ Set the details for your Joomla 4 site in the file...
 
 This needs...
 * Site URL
-* Joomla site's username
-* Joomla site's password
+* Joomla API token
 
 
 Create all the various other flutter files...
@@ -48,9 +47,11 @@ Flutter set-up issues can usually solved by running...
 
 To check the API is working you can test it with a cURL call, like...
 
-```curl --location --request GET 'https://your_site_base_url.com/api/index.php/v1/content/article' --header 'Authorization: Basic basicAuth'```
+```curl --location --request GET 'http://localhost/joomla/joomla_4_beta_4/api/index.php/v1/content/article' --header 'authorization: Bearer YOUR_API_TOKEN'```
 
-...in the above curl call, you can get the ```basicAuth``` value from the flutter terminal output.
+Check 
+Make authorization header case insensitive in API #30882 - https://github.com/joomla/joomla-cms/pull/30882
+Auth headers in Joomla 4 API should maybe be case insensitive #30871 - https://github.com/joomla/joomla-cms/issues/30871
 
 
 
@@ -59,6 +60,7 @@ To check the API is working you can test it with a cURL call, like...
 I could / should do some more bits to this, like...
 
 - [ ] add HTML rendering
+- [ ] add image per item
 - [ ] add error handling
 - [ ] some other stuff...
 
@@ -76,6 +78,8 @@ I could / should do some more bits to this, like...
 
 * https://www.joomdev.com/blog/entry/joomla-4-api-introduction
 * https://docs.joomla.org/J4.x:Joomla_Core_APIs
+* https://www.youtube.com/watch?v=lT9qodsvfZg&t=38s
+* https://github.com/alexandreelise/j4x-api-collection
 
 
 
@@ -85,3 +89,5 @@ I could / should do some more bits to this, like...
 * https://medium.com/@yugandhar0189/flutter-json-parsing-from-network-response-9c0e8756d43
 * https://github.com/yugandh/Flutter_JsonParsing
 * https://app.quicktype.io/
+
+
