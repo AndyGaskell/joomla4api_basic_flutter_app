@@ -2,6 +2,8 @@
 
 A basic flutter app using the Joomla 4 API.
 
+This is tested using Joomla 4 Beta 4.
+
 
 
 ## Getting Started
