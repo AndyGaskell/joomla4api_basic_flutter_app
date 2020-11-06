@@ -29,4 +29,6 @@ jobs:
         channel: 'stable' # optional, default to: 'stable', can use 'dev'
     - run: flutter pub get
     #- run: flutter test
-    - run: flutter build apk
+    #- run: flutter build apk
+    - run: flutter build appbundle --target-platform android-arm64
+     
