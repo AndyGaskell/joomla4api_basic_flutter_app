@@ -1,5 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 # handy notes on https://medium.com/mobile-development-group/github-actions-for-flutter-cf02923d7b5d
+# https://github.com/marketplace/actions/dart-and-flutter-package-publisher
+# https://github.com/subosito/flutter-action
+  
 
 name: Flutter CI
 
